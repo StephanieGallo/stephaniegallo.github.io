@@ -1,0 +1,11 @@
+[10-Jun-2015 14:55:45 America/New_York] PHP Notice:  Undefined variable: sent in /home/riotthfc/public_html/index.php on line 185
+[10-Jun-2015 14:55:46 America/New_York] PHP Notice:  Undefined variable: sent in /home/riotthfc/public_html/index.php on line 185
+[10-Jun-2015 14:56:24 America/New_York] PHP Notice:  Undefined variable: sent in /home/riotthfc/public_html/index.php on line 185
+[10-Jun-2015 14:56:24 America/New_York] PHP Notice:  Undefined variable: sent in /home/riotthfc/public_html/index.php on line 185
+[10-Jun-2015 15:05:12 America/New_York] PHP Notice:  Use of undefined constant error - assumed 'error' in /home/riotthfc/public_html/index.php on line 19
+[10-Jun-2015 15:14:37 America/New_York] PHP Parse error:  syntax error, unexpected 'text' (T_STRING), expecting ',' or ';' in /home/riotthfc/public_html/index.php on line 193
+[10-Jun-2015 15:30:33 America/New_York] PHP Parse error:  syntax error, unexpected 'alert' (T_STRING), expecting ',' or ';' in /home/riotthfc/public_html/index.php on line 187
+[10-Jun-2015 15:31:41 America/New_York] PHP Parse error:  syntax error, unexpected 'alert' (T_STRING), expecting ',' or ';' in /home/riotthfc/public_html/index.php on line 187
+[10-Jun-2015 15:56:49 America/New_York] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/riotthfc/public_html/index.php on line 193
+[10-Jun-2015 15:57:04 America/New_York] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/riotthfc/public_html/index.php on line 193
+[10-Jun-2015 15:57:08 America/New_York] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/riotthfc/public_html/index.php on line 193

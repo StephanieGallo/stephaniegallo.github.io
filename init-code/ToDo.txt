@@ -1,0 +1,1 @@
+A team page where we have our pics/avatars and short descriptions/bios. An about page that has a brief history, founding principles, etc., and a page with open positions and descriptions (post-funding positions).

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('../fonts/bebas.eot');
+    src: url('../fonts/bebas.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas.woff') format('woff'),
+         url('../fonts/bebas.ttf') format('truetype'),
+         url('../fonts/bebas.svg#bebasregular') format('svg');
+
+ }
+ @font-face {  
+    font-family: 'stencilia';
+    src: url('../fonts/fstencilia.eot');
+    src: url('../fonts/stencilia.woff') format('woff'), 
+         url('../fonts/fonts/stencilia.ttf') format('truetype'), 
+         url('../fonts/fonts/stencilia.svg') format('svg');
+}
+
+
+@media only screen and (max-width: 1356px) {
+    #riot-hlogo img
+    {
+        display: none;
+    }
+    canvas
+    {
+        display: none;
+    }
+}
+
+#riot-hlogo img
+{
+    
+    position: absolute;
+    z-index: 0;
+    top:122px;
+    left: 50px;
+}
+
+header h1#header-text
+{
+    font-family: 'bebas' !important;
+    font-size: 50px;
+    line-height: 125%;
+    padding-bottom: 10px;
+    padding-top: 15px;
+
+}
+header h2.text-center
+{
+    font-family: stencilia !important;
+    font-size: 20px;
+    line-height: 200%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+button.btn-lg
+{
+    background-color: #00B16A;
+    z-index: 4;
+    position: relative;
+    box-shadow: 5px 5px #920000;
+
+    background: -webkit-linear-gradient(#22b01b, #47fc2f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#22b01b, #47fc2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#22b01b, #47fc2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#22b01b, #47fc2f); /* Standard syntax */
+}
+canvas
+{
+    z-index: -1;
+}
+p.social-media
+{
+    font-size: 18px;
+    vertical-align: center; 
+}
+
+ul.social-buttons 
+{
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a 
+{
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active 
+{
+    color: #303030;
+}
+ul.social-buttons, ul.red li a 
+{
+
+    color: #e53f3f;
+
+}
