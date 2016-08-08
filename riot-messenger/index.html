@@ -1,148 +1,4 @@
 <!DOCTYPE html>
-<?php
-  $hostname='localhost';
-  $username='riotthfc_admin';
-  $password='7=?G+%MV@_#;';
-
-
-  $beta = false;
-  $sent = null;
-  $submit = false;
-  //error_reporting(E_ALL);
-  $error = false;
-  $inject = "/(content-type|bcc:|cc:|to:)/i";
-
-if (isset($_POST['submit']))
-{
-    $submit = true;
-
-    if((!isset($_POST['name']) || !isset($_POST['subject']) || !isset($_POST['message'])) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
-       $error = true;
-
-    foreach ($_POST as $key => $value)
-    {
-      // header injection
-       if ( preg_match($inject, $value))
-       {
-             $error = true;
-             exit;
-      }
-    }
-    if(!$error)
-    {
-
-      try
-      {
-        //creating connection for mysql
-        $conn = new PDO("mysql:host=$hostname;dbname=riotthfc_init-code",$username,$password);
-
-        //set the PDO error mode to exeption
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
-
-        $stmt = $conn->prepare(" INSERT INTO riotmsg (name, subject, message, email)
-                               VALUES (:name, :subject, :message, :email)");
-
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':subject', $subject, PDO::PARAM_STR);
-        $stmt->bindParam(':message', $message, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-
-        $name = $_POST["name"];
-        $subject = $_POST["subject"];
-        $message = $_POST["message"];
-        $email = $_POST["email"];
-        $stmt->execute();
-
-
-        $conn = null;
-        //echo "Connected successfully";
-      }
-      catch(PDOException $e)
-      {
-        //echo "Connection failed: " . $e->getMessage();
-      }
-
-        $header = 'From '.$_POST["name"]. '<' . $_POST["email"] . '>' . "\r\n" .
-        'Reply-To: ' .$_POST["email"]. "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-        $sent = mail("info@riot-messenger.com", $_POST["subject"], "Message:  ".$_POST['message'], $header);
-   }
-}
-
-else if (isset($_POST['beta']))
-{
-
-  if(!empty($_POST['email']))
-  {
-    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
-       $error = true;
-
-    foreach ($_POST as $key => $value)
-    {
-
-      // header injection
-       if ( preg_match($inject, $value))
-       {
-             $error = true;
-             exit;
-      }
-    }
-    $error = false;
-
-    if(!$error)
-    {
-      echo "!$error";
-      try
-      {
-        //creating connection for mysql
-        $conn = new PDO("mysql:host=$hostname;dbname=riotthfc_init-code",$username,$password);
-
-        //set the PDO error mode to exeption
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
-
-        $stmt = $conn->prepare(" INSERT INTO beta (email)
-                               VALUES (:email)");
-
-
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-
-        $email = $_POST["email"];
-        $stmt->execute();
-
-
-        $conn = null;
-        //echo "Connected successfully";
-      }
-      catch(PDOException $e)
-      {
-        //echo "Connection failed: " . $e->getMessage();
-      }
-
-        $beta = true;
-        $header = 'From BetaUser <' . $_POST["email"] . '>' . "\r\n" .
-            'Reply-To: ' .$_POST["email"]. "\r\n" .
-             'X-Mailer: PHP/' . phpversion();
-             $message = "New beta user, email: ".$_POST["email"];
-          $betaSent = mail("info@riot-messenger.com", "New beta user!", $message, $header);
-
-          $beta = true;
-            $header = 'From info@riot-messenger.com';
-            $message = "Welcome to Riot Messenger Beta!
-                         We're excited to Riot with you.
-                         Beta is set to launch on October 31st, 2015.
-                         When we're ready, we'll send you a special code and download link for the Riot App.
-
-                          Thank you,
-                          The Riot Messenger Team";
-          $betaSent = mail($_POST["email"], "Are you ready to Riot?", $message, $header);
-
-   }
-  }
-}
-
-?>
-
-
 <!--Icons can be change with FontAwesome and IonIcon -->
 <html>
 
@@ -315,22 +171,17 @@ else if (isset($_POST['beta']))
       </section>
        <section  id="beta" class="section bg-primary">
         <div class="container">
-         <?php  if(!$beta){ ?>
            <h2 class="text-center download wow bounceInUp"><span>Want Riot Messenger?</span></h2>
            <h4 style="color: white;" class="text-center">Be one the first users to receive the beta as soon as it's available and recieve $5 of in app-credit when the app goes live.</h4>
            </br>
            <div class="col-sm-6 col-sm-offset-3">
 
-           <form method="post" action="index.php#beta">
+           <form method="post" action="">
            <input type="email" name="email" placeholder="Email" required="required" class="form-control">
-           <button name="beta" type="submit" class="btn col-sm-offset-3">Join beta</button>
+           <button name="beta" type="" class="btn col-sm-offset-3">Join beta</button>
            </div>
 
            </form>
-              <?php   } else{ ?>
-                  <h2 class="text-center download wow bounceInUp"><span>Thank you for joining!</span></h2>
-
-                  <?php   } ?>
 
 
         </div>
@@ -401,18 +252,10 @@ CoinWidgetCom.go({
       </section>
       <section id="contact" class="section bg-primary">
         <div class="container">
-        <?php   if($sent) echo "<h3 class=\"text-center\">Message Sent!</h3>";
-                else if($submit)
-                {
-                echo "<div class=\"alert alert-danger\" role=\"alert\"><h3 class=\"text-center\">Error, try again.</h3> </div>";
-                }
-         ?>
-          <?php if(!$sent)
-          echo "<h2 class=\"text-center\">Contact Us</h2>";
-          ?>
+          <h2 class=\"text-center\">Contact Us</h2>
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-              <form class="row contacts" action="index.php#contact" method="post">
+              <form class="row contacts" action="" method="post">
                 <div class="col-sm-6">
                   <input type="text" name="name" placeholder="Name" required="required" class="form-control">
                 </div>
