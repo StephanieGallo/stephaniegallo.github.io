@@ -1,0 +1,63 @@
+html
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("footer_lodyas.png");
+
+}
+body 
+{
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+	max-width: 950px;
+	min-width: 250px;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	background-color: #232323;
+}
+
+header 
+{
+	width: 100%;
+	text-align: left;
+	background-color: #E9E9E9;
+	padding: 25px;
+}
+
+section 
+{
+	padding: 15px;
+	width: 100%;
+	background-color: white;
+	padding-left: 25px;
+  	padding-right: 30px;
+}
+
+#column-left
+{
+  width: 50%; 
+  float: left; 
+  background-color: #FFFFFF;
+  padding-right: 30px;
+}  
+#column-right 
+{
+  width: 50%; 
+  float: left; 
+  background-color: #FFFFFF;
+  padding-right: 30px;
+
+}
+footer 
+{	
+	font-size: 11px;
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+	background-color: #26A9E0;
+	margin-top: -3px;
+}
+
+figcaption
+{
+	font-size: 10px;
+}
