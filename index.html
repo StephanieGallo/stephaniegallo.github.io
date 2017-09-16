@@ -1,280 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--<link rel="icon" href="../../../../favicon.ico">-->
 
     <title>Stephanie Gallo</title>
 
-    <!-- Bootstrap Core CSS -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link href="css/blog-home.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
-    .fa-circle
-    {
-      color: #1abc9c !important;
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .eee {
+        background-color: #EEE;
+    }
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    section {
+        /*margin-top: 50px;
+        margin-bottom: 50px;*/
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .me {
+        min-height: 333px;
+        background-image: url('assets/img/tech-crunch-disrupt-2015_0031.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .row {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .progress {
+        margin-bottom: 12px;
     }
     </style>
-
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Resume</a>
+            <a class="navbar-brand" href="#">SG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li>
-                        <a href="more.html">More</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#avtivities">Extracurricular Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#honors">Honors</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>-->
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+            </div><!--/.collapse navbar-collapse-->
+        </div><!--/.container-->
     </nav>
+    <br>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-          <!-- Sidebar  Column -->
-          <div class="col-md-4">
-              <!-- Well -->
-                <hr>
-                  <img src="img/tech-crunch-disrupt-2015_0031.jpg" class="img-responsive img-center" width="50%" alt="Stephanie Gallo">
-                <hr>
-                  <h4 id="center-text">Stephanie Gallo</h4>
-                <hr>
-                <!-- <div class="well"> -->
-                <center>
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                  </span><br>
-                  gmail.com
-                  <br>
-                  <!-- <i class="fa fa-mobile-phone fa-stack-1x"></i><br>
-                  (951) 208 - 5594
-                  <br> -->
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span><br>
-                  <a href="https://github.com/StephanieGallo">github.com/StephanieGallo</a>
-                  <br>
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                  </span><br>
-                  <a href="https://www.linkedin.com/in/stephaniegallo07">linkedin.com/in/stephaniegallo07</a>
-                  <br>
-                </center>
-                  <hr>
-                  <h4 id="center-text" >Objective</h4>
-                  <p>To obtain a position in an environment
-                    where I can utilize my skills, expand my
-                    knowledge, and contribute to the organization.</p>
-                  <hr>
-                  <h4 id="center-text">Skills</h4>
-                  <div class="row">
-                      <div class="col-lg-6">
-                          <ul class="list-unstyled">
-                              <li>English</li>
-                              <li>Spanish</li>
-                              <li>Microsoft Office</li>
-                              <li>Adobe Photoshop</li>
-                              <li>Adobe Dream Weaver</li>
-                          </ul>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                      <div class="col-lg-6">
-                          <ul class="list-unstyled">
-                              <li>Website Maintenance</li>
-                              <li>HTML & CSS</li>
-                              <li>JavaScript</li>
-                              <li>PHP</li>
-                              <li>C++</li>
-                          </ul>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                  </div>
-                  <!-- /.row -->
-                  <hr>
-              <!-- </div> -->
-
-          </div>
-            <!-- Main Body Column -->
-            <div class="col-md-8">
-
-
-                <hr>
-                <h4>
-                    EXPERIENCE
-                </h4>
-                <hr>
-                <h5>
-                    BUSINESS TECHNICAL ASSISTANT// RIVERSIDE COMMUNITY COLLEGE DISTRICT
-                </h5>
-                <p>
-                  September 2016 – Present<br>
-                </p>
-
-                <h5>
-                    SUPPLEMENTAL INSTRUCTION LEADER // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                  May 2014 – July 2016<br>
-                  Facilitated student learning, interactive study sessions, provided in class assistance,
-                  and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer
-                  courses.
-                </p>
-
-                <h5>
-                    COMPUTER LAB AIDE // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                  October 2013 – June 2016<br>
-                  Provided general technical assistance and personal tutoring for Computer Science, Web Design,
-                  Information Technology, and Graphic Design.
-                </p>
-                <h5>
-                    STUDENT AIDE - WEB DEVELOPMENT // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                  May 2014 – January 2016<br>
-                  Assisted in the maintenance of the Moreno Valley College website using HTML 5, CSS, and
-                  JavaScript.
-                </p>
-                <h5>
-                    STUDENT AIDE – TECHNICAL SUPPORT SERVICES // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                  June 2015 – January 2016<br>
-                  Assisted in the setup and installation of desktop and laptop computers.
-                </p>
-                <h5>
-                    WEB DEVELOPER AND CONTENT STRATEGIST // INIT CODE INC.
-                </h5>
-                <p>
-                  September 2015 – December 2015<br>
-                  Responsible for the overall online presence of Init Code Inc. including the
-                  design, development, and maintenance of the company website.
-                </p>
-
-                <hr>
-                <h4>
-                    EDUCATION
-                </h4>
-                <hr>
-                <h5>
-                  BACHELOR OF SCIENCE, COMPUTER SCIENCE // CURRENT
-                </h5>
-                <p>
-                  California State University, San Bernardino<br>
-                </p>
-                <h5>
-                  ASSOCIATES OF SCIENCE, COMPUTER SCIENCE // JUNE 2016
-                </h5>
-                <p>
-                  Moreno Valley College<br>
-                  Graduated with Distinction
-                </p>
-                <h5>
-                  ASSOCIATES OF MATH & SCIENCE // JUNE 2016
-                </h5>
-                Moreno Valley College
-                <h5>
-                  ASSOCIATES OF SCIENCE, COMPUTER PROGRAMMING // JUNE 2016
-                </h5>
-                <p>
-                  Moreno Valley College
-                </p>
-                <h5>
-                  WEBMASTER CERTIFICATION // JUNE 2016
-                </h5>
-                <p>
-                  Moreno Valley College<br>
-                  Webmaster Certification with a concentration in Web Development
-                </p>
-                <hr>
-                <h4>
-                    VOLUNTEER EXPERIENCE
-                </h4>
-                <hr>
-                <h5>
-                    SOFTWARE ENGINEERING CLUB // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                    Spring 2014 – Spring 2015<br>
-                    Secretary and Co-founder
-                </p>
-                <h5>
-                    LGBTSA // MORENO VALLEY COLLEGE
-                </h5>
-                <p>
-                    Spring 2012 – Spring 2014<br>
-                    Secretary
-                </p>
-
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <!-- Footer -->
-        <footer>
+    <!-- Begin page content -->
+    <div class="container-fluid">
+        <br>
+        <section class="eee">
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- <p>Copyright &copy; Stephanie Gallo 2016</p> -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4 me">
+
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h1 class="h3">Stephanie Gallo</h1>
+                                    Business Technical Assistant at RCCD &amp; Developer at CodeStorm<br>
+                                    Computer Science Student at Cal State San Bernardino<br>
+
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:stephaniegallo.github@gmail.com"> &nbsp;stephaniegallo.github@gmail.com</a><br>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Riverside, California
+                                </div><!--/.card-body-->
+                            </div><!--/col-sm-8-->
+                        </div><!--/.row-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-12-->
+            </div><!--/.row-->
+        </section>
+
+        <section>
+            <h2 id="about">About Me</h2>
+            <p>Hi! My name is Stephanie Gallo and I am a Web Developer. I have been working on Web Design and Development for the last 10 years. I am currently a Computer Science student at Cal State San Bernardino.</p>
+
+            <h3>Skills</h3>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            HTML
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            CSS
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            JavaScript
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            PHP
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            MySQL
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div><!--.card-body-->
+                    </div><!--/.card-->
+
+                </div><!--/.col-md-6-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            Laravel
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            C++
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            Adobe Photoshop
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            Adobe Dreamweaver
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div><!--.card-body-->
+                    </div><!--/.card-->
+
+                </div><!--/.col-md-6-->
+            </div><!--/.row-->
+
+        </section>
+        <section>
+            <h2 id="#projects">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/regionalcte.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="https://www.regionalcte.org/" target="_blank">RegionalCTE.org</a>
+                            <p>RegionalCTE.org was developed using Laravel, HTML, CSS, and Javascript/JQuery. It is a web application developed for the California Community College's Regional Consortia. The purpose of this website is to faciliate in the program submission process.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/desert.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="http://www.desertcolleges.org/" target="_blank">DesertColleges.org</a>
+                            <p>The Desert Colleges websites was developed using PHP, HTML, CSS, and Javascript/JQuery. The Desert Colleges website facilicates communication and collaboration between IE/DRC memeber colleges.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/drb.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="http://faculty.rcc.edu/bhattacharya/" target="_blank">Dr. Bhattacharya's Website</a>
+                            <p>Dr. Bhattacharya's website serves as a hub for students to access important lecture information such as study guides, labs, and assignments.The website utilizes HTML, CSS, and JavaScript.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+            </div><!--/.row-->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/initcode.png" alt="Card image cap">
+                        <div class="card-body">
+                            Init Code()
+                            <p>Init() Code's company webpage which displays information about the company and its employees, and also has a contact form.
+
+                            The website utilizes HTML5, CSS3, JavaScript, PHP, and was based off a Bootstrap framework template.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/riot.png" alt="Card image cap">
+                        <div class="card-body">
+                            Riot Messenger
+                            <p>I did not create this website originally, but I did maintain it and make modifications to the website over time.
+
+                            The website utilizes HTML5, CSS3, JavaScript, PHP, and was based off the Bootstrap framework.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/cutebakes.png" alt="Card image cap">
+                        <div class="card-body">
+                            Cute Bakes
+                            <p>Cute Bakes is a fictional website made as a final project for my Dreamweaver class.<br>
+
+                            The website is based off a Bootstrap Framework template and utilizes HTML5, CSS3, and JavaScript.</p>
+                        </div><!--/.card-body-->
+                    </div><!--/.card-->
+                </div><!--/.col-md-4-->
+            </div><!--/.row-->
+        </section>
+        <section>
+            <h2 id="education">Education</h2>
+            <p>Bachelor of Science, Computer Science<br>
+            Current<br>
+            California State University, San Bernardino</p>
+
+            <p>Associates of Science, Computer Science<br>
+            June 2016<br>
+            Moreno Valley College<br>
+            Graduated with Distinction</p>
+
+            <p>Associates of Math &amp; Science<br>
+            June 2016<br>
+            Moreno Valley College</p>
+
+            <p>Associates of Science, Computer Programming<br>
+            June 2016<br>
+            Moreno Valley College</p>
+
+            <p>Webmaster Certification<br>
+            June 2016<br>
+            Moreno Valley College<br>
+            Webmaster Certification with a concentration in Web Development</p>
+        </section>
+        <section>
+            <h2 id="experience">Experience</h2>
+            <p>Developer<br>
+            CodeStorm<br>
+            May 2017 - Present</p>
+
+            <p>Business Technical Assistant<br>
+            Riverside Community College District<br>
+            September 2016 – Present</p>
+
+            <p>Supplemental Instruction Leader<br>
+            Moreno Valley College<br>
+            May 2014 – July 2016<br>
+            Facilitated student learning, interactive study sessions, provided in class assistance, and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer courses.</p>
+
+            <p>Computer Lab Aide<br>
+            Moreno Valley College<br>
+            October 2013 – June 2016<br>
+            Provided general technical assistance and personal tutoring for Computer Science, Web Design, Information Technology, and Graphic Design.</p>
+
+            <p>Student Aide - Web Development<br>
+            Moreno Valley College<br>
+            May 2014 – January 2016<br>
+            Assisted in the maintenance of the Moreno Valley College website using HTML 5, CSS, and JavaScript.</p>
+
+            <p>Student Aide – Technical Support Services<br>
+            Moreno Valley College<br>
+            June 2015 – January 2016<br>
+            Assisted in the setup and installation of desktop and laptop computers.</p>
+
+            <p>Web Developer And Content Strategist<br>
+            Init Code Inc.<br>
+            September 2015 – December 2015<br>
+            Responsible for the overall online presence of Init Code Inc. including the design, development, and maintenance of the company website.</p>
+        </section>
+        <section>
+            <h2 id="activities">Extracuricular Activities</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Software Engineering Club<br>
+                    Moreno Valley College<br>
+                    Spring 2014 – Spring 2015<br>
+                    Secretary and Co-founder</p>
+                </div><!--/.col-md-6-->
+                <div class="col-md-6">
+                    <p>LGBTSA<br>
+                    Moreno Valley College<br>
+                    Spring 2012 – Spring 2014<br>
+                    Secretary</p>
                 </div>
-                <!-- /.col-lg-12 -->
+            </div><!--/.row-->
+        </section>
+        <section>
+            <h2 id="honors">Honors and Awards</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Dean's List<br>
+                    Spring 2017<br>
+                    Awarded for maintaining a 3.5 grade point average or better while attending full time.</p>
+
+                    <p>Dean's List<br>
+                    Winter 2017<br>
+                    Awarded for maintaining a 3.5 grade point average or better while attending full time.</p>
+
+                    <p>Computer Information Systems Student of Distinction<br>
+                    May 2015<br>
+                    For showing academic excellence in Business &amp; Information Technology Systems (Computer Information Systems).</p>
+
+                    <p>Software Engineering Club - Club Member Of Distinction<br>
+                    May 2015<br>
+                    Awarded for providing critical support to the Software Engineering Club.</p>
+
+                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    May 2015<br>
+                    Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
+
+                    <p>Gold Award<br>
+                    May 2015<br>
+                    For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 200 services hours in Spring 2015.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    November 2014<br>
+                    Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
+
+                    <p>Bronze Award<br>
+                    November 2014<br>
+                    For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating 50-99 service hours in Fall 2014.</p>
+
+                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    2014<br>
+                    Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
+
+                    <p>Dean’s List<br>
+                    2014<br>
+                    Awarded for maintaining a 3.0 grade point average or better while attending full time.</p>
+
+                    <p>Silver Award<br>
+                    November 2013<br>
+                    For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating 100-199 service hours in Spring 2014.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Platinum Award<br>
+                    May 2013<br>
+                    For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 400 service hours in Spring 2013.</p>
+
+                    <p>LGBTSA Club Member of Distinction<br>
+                    May 2013<br>
+                    Awarded for providing critical support to the LGBTSA Club.</p>
+
+                    <p>Dean's List<br>
+                    2013<br>
+                    Awarded for maintaining a 3.0 grade point average or better while attending Moreno Valley College full time.</p>
+
+                    <p>Gold Award<br>
+                    November 2012<br>
+                    For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 200 services hours in Fall 2012.</p>
+
+                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    2012<br>
+                    Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
+                </div>
             </div>
-            <!-- /.row -->
-        </footer>
+        </section>
+        <br>
+        <!--<div class="mt-3">
+            <h1>Sticky footer with fixed navbar</h1>
+        </div>
+        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
+        <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>-->
+    </div><!--/.container-->
 
-    </div>
-    <!-- /.container -->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                Stephanie Gallo
+                stephaniegallo.github@gmail.com
+                Riverside, CA.
+            </span>
+        </div><!--/.container-->
+    </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 </body>
-
 </html>
