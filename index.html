@@ -31,8 +31,8 @@
     }
 
     .center {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .eee {
         background-color: #EEE;
@@ -41,20 +41,18 @@
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
+    section#info {
+        background-image: url('assets/img/bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
     section {
         /*margin-top: 50px;
         margin-bottom: 50px;*/
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    .me {
-        min-height: 333px;
-        background-image: url('assets/img/tech-crunch-disrupt-2015_0031.jpg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
     }
     .row {
         margin-top: 25px;
@@ -107,18 +105,33 @@
     <br>
 
     <!-- Begin page content -->
+    <style>
+    #info .card {
+        border: 0;
+    }
+    #info .card .row  {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #info .card-body {
+        display: block;
+    }
+    </style>
+
     <div class="container-fluid">
         <br>
-        <section class="eee">
+        <section class="eee" id="info">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="card">
                         <div class="row">
-                            <div class="col-4 me">
-
+                            <div class="col-md-5">
+                                <div class="center">
+                                    <img src="assets/img/me.png" class="img-fluid">
+                                </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-md-7">
                                 <div class="card-body">
                                     <h1 class="h3">Stephanie Gallo</h1>
                                     Business Technical Assistant at RCCD &amp; Developer at CodeStorm<br>
@@ -143,10 +156,12 @@
         </section>
 
         <section>
-            <h2 id="about">About Me</h2>
-            <p>Hi! My name is Stephanie Gallo and I am a Web Developer. I have been working on Web Design and Development for the last 10 years. I am currently a Computer Science student at Cal State San Bernardino.</p>
+            <h2 id="about"><i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; About Me</h2>
+            <p>Hi! My name is Stephanie Gallo. I am currently a Computer Science student at Cal State San Bernardino. </p>
+        </section>
 
-            <h3>Skills</h3>
+        <section>
+            <h2><i class="fa fa-terminal" aria-hidden="true"></i>&nbsp; Skills</h2>
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
@@ -182,7 +197,7 @@
                         <div class="card-body">
                             Laravel
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             C++
                             <div class="progress">
@@ -204,7 +219,7 @@
 
         </section>
         <section>
-            <h2 id="#projects">Projects</h2>
+            <h2 id="#projects"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Projects</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -271,149 +286,147 @@
                 </div><!--/.col-md-4-->
             </div><!--/.row-->
         </section>
+
         <section>
-            <h2 id="education">Education</h2>
-            <p>Bachelor of Science, Computer Science<br>
+            <h2 id="education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Education</h2>
+            <p><strong>Bachelor of Science, Computer Science</strong><br>
             Current<br>
             California State University, San Bernardino</p>
 
-            <p>Associates of Science, Computer Science<br>
+            <p><strong>Associates of Science, Computer Science</strong><br>
             June 2016<br>
             Moreno Valley College<br>
             Graduated with Distinction</p>
 
-            <p>Associates of Math &amp; Science<br>
+            <p><strong>Associates of Math &amp; Science</strong><br>
             June 2016<br>
             Moreno Valley College</p>
 
-            <p>Associates of Science, Computer Programming<br>
+            <p><strong>Associates of Science, Computer Programming</strong><br>
             June 2016<br>
             Moreno Valley College</p>
 
-            <p>Webmaster Certification<br>
+            <p><strong>Webmaster Certification</strong><br>
             June 2016<br>
             Moreno Valley College<br>
             Webmaster Certification with a concentration in Web Development</p>
         </section>
         <section>
-            <h2 id="experience">Experience</h2>
-            <p>Developer<br>
-            CodeStorm<br>
-            May 2017 - Present</p>
-
-            <p>Business Technical Assistant<br>
+            <h2 id="experience"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Experience</h2>
+            <p><strong>Business Technical Assistant</strong><br>
             Riverside Community College District<br>
-            September 2016 – Present</p>
+            September 2016 – Present<br>
+            Design, develop, and maintain the Desert Consortium website using front-end technologies and dynamic back end languages.</p>
 
-            <p>Supplemental Instruction Leader<br>
+            <p><strong>Supplemental Instruction Leader</strong><br>
             Moreno Valley College<br>
             May 2014 – July 2016<br>
             Facilitated student learning, interactive study sessions, provided in class assistance, and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer courses.</p>
 
-            <p>Computer Lab Aide<br>
+            <p><strong>Computer Lab Aide</strong><br>
             Moreno Valley College<br>
             October 2013 – June 2016<br>
             Provided general technical assistance and personal tutoring for Computer Science, Web Design, Information Technology, and Graphic Design.</p>
 
-            <p>Student Aide - Web Development<br>
+            <p><strong>Student Aide - Web Development</strong><br>
             Moreno Valley College<br>
             May 2014 – January 2016<br>
             Assisted in the maintenance of the Moreno Valley College website using HTML 5, CSS, and JavaScript.</p>
 
-            <p>Student Aide – Technical Support Services<br>
+            <p><strong>Student Aide – Technical Support Services</strong><br>
             Moreno Valley College<br>
             June 2015 – January 2016<br>
             Assisted in the setup and installation of desktop and laptop computers.</p>
 
-            <p>Web Developer And Content Strategist<br>
+            <p><strong>Web Developer And Content Strategist</strong><br>
             Init Code Inc.<br>
             September 2015 – December 2015<br>
             Responsible for the overall online presence of Init Code Inc. including the design, development, and maintenance of the company website.</p>
         </section>
         <section>
-            <h2 id="activities">Extracuricular Activities</h2>
+            <h2 id="activities"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp; Extracuricular Activities</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Software Engineering Club<br>
+                    <p><strong>Software Engineering Club</strong><br>
                     Moreno Valley College<br>
                     Spring 2014 – Spring 2015<br>
-                    Secretary and Co-founder</p>
+                    <em>Secretary and Co-founder</em></p>
                 </div><!--/.col-md-6-->
                 <div class="col-md-6">
-                    <p>LGBTSA<br>
+                    <p><strong>LGBTSA</strong><br>
                     Moreno Valley College<br>
                     Spring 2012 – Spring 2014<br>
-                    Secretary</p>
+                    <em>Secretary</em></p>
                 </div>
             </div><!--/.row-->
         </section>
         <section>
-            <h2 id="honors">Honors and Awards</h2>
+            <h2 id="honors"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; Honors and Awards</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <p>Dean's List<br>
+                    <p><strong>Dean's List</strong><br>
                     Spring 2017<br>
                     Awarded for maintaining a 3.5 grade point average or better while attending full time.</p>
 
-                    <p>Dean's List<br>
+                    <p><strong>Dean's List</strong><br>
                     Winter 2017<br>
                     Awarded for maintaining a 3.5 grade point average or better while attending full time.</p>
 
-                    <p>Computer Information Systems Student of Distinction<br>
+                    <p><strong>Computer Information Systems Student of Distinction</strong><br>
                     May 2015<br>
                     For showing academic excellence in Business &amp; Information Technology Systems (Computer Information Systems).</p>
 
-                    <p>Software Engineering Club - Club Member Of Distinction<br>
+                    <p><strong>Software Engineering Club - Club Member Of Distinction</strong><br>
                     May 2015<br>
                     Awarded for providing critical support to the Software Engineering Club.</p>
 
-                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    <p><strong>Who’s Who Among Universities &amp; Colleges Award</strong><br>
                     May 2015<br>
                     Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
 
-                    <p>Gold Award<br>
+                    <p><strong>Gold Award</strong><br>
                     May 2015<br>
                     For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 200 services hours in Spring 2015.</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    <p><strong>Who’s Who Among Universities &amp; Colleges Award</strong><br>
                     November 2014<br>
                     Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
 
-                    <p>Bronze Award<br>
+                    <p><strong>Bronze Award</strong><br>
                     November 2014<br>
                     For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating 50-99 service hours in Fall 2014.</p>
 
-                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    <p><strong>Who’s Who Among Universities &amp; Colleges Award</strong><br>
                     2014<br>
                     Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
 
-                    <p>Dean’s List<br>
+                    <p><strong>Dean’s List</strong><br>
                     2014<br>
                     Awarded for maintaining a 3.0 grade point average or better while attending full time.</p>
 
-                    <p>Silver Award<br>
+                    <p><strong>Silver Award</strong><br>
                     November 2013<br>
                     For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating 100-199 service hours in Spring 2014.</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Platinum Award<br>
+                    <p><strong>Platinum Award</strong><br>
                     May 2013<br>
                     For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 400 service hours in Spring 2013.</p>
 
-                    <p>LGBTSA Club Member of Distinction<br>
+                    <p><strong>LGBTSA Club Member of Distinction</strong><br>
                     May 2013<br>
                     Awarded for providing critical support to the LGBTSA Club.</p>
 
-                    <p>Dean's List<br>
+                    <p><strong>Dean's List</strong><br>
                     2013<br>
                     Awarded for maintaining a 3.0 grade point average or better while attending Moreno Valley College full time.</p>
 
-                    <p>Gold Award<br>
+                    <p><strong>Gold Award</strong><br>
                     November 2012<br>
                     For showing outstanding commitment in serving Moreno Valley College and its neighboring communities, dedicating more than 200 services hours in Fall 2012.</p>
 
-                    <p>Who’s Who Among Universities &amp; Colleges Award<br>
+                    <p><strong>Who’s Who Among Universities &amp; Colleges Award</strong><br>
                     2012<br>
                     Awarded for maintaining a GPA of 3.5 or greater while participating within school organizations and extracurricular activities.</p>
                 </div>
@@ -430,8 +443,8 @@
     <footer class="footer">
         <div class="container">
             <span class="text-muted">
-                Stephanie Gallo
-                stephaniegallo.github@gmail.com
+                Stephanie Gallo |
+                stephaniegallo.github@gmail.com |
                 Riverside, CA.
             </span>
         </div><!--/.container-->
