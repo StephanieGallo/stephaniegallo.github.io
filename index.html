@@ -16,29 +16,30 @@
 
         }
         body {
-            background-color: #10222B;
-            color: #FFF;
+            background-color: #FFF;
+            color: #000;
             font-family: 'Open Sans', sans-serif;
         }
         h1, h2, h3, h4, h5, h6 {
-            color: #FFF;
+            color: #000;
             font-family: 'Playfair Display', serif !important;
         }
         p {
-            color: #afb0c0;
+            color: #333;
         }
         a{
-            color: #E3AC1B;
+            color: #1B1464;
         }
         a:hover {
-            color: #E3AC1B;
+            color: #1B1464;
             text-decoration: underline;
+            background-color: yellow;
         }
         .center {
             text-align: center !important;
         }
         .subtitle {
-            color: #fff;
+            color: #333;
             font-family: 'Open Sans', sans-serif !important;
             font-size: .8rem;
             text-transform: uppercase;
@@ -63,9 +64,18 @@
             padding-right: 10px;
         }
         .social-media a:hover i {
-            
+            font-size: 20px;
+            -webkit-transition:  .5s; /* Safari */
+            transition:  .5s;
         }
-
+        .btn-black {
+            background-color: #000;
+            color: #FFF;
+        }
+        a.btn-black:hover {
+            background-color: yellow;
+            color: #000;
+        }
         </style>
         </head>
     <body>
@@ -90,13 +100,15 @@
             <section>
                 <div class="row">
                     <div class="col-md-4">
-                        <h1 class="subtitle">About Me</h1>
-                        <h1 class="h1">I am a Computer Science Student</h1>
+                        <!--<h1 class="subtitle">About Me</h1>-->
+                        <div class="center">
+                            <h1 class="h1">Stephanie Gallo</h1>
+                            <img src="assets/img/me.jpg" class="rounded-circle img-responsive"  height="100"/>
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <p>Hi! My name is Stephanie Gallo. I am currently a senior at Cal State San Bernardino. I've earned a few associates in Computer Science and Programming while attending Moreno Valley College. </p>
+                        <p>Hi! My name is Stephanie Gallo. I am a Computer Science Undergraduate student at Cal State San Bernardino. </p>
 
-                        <p>My website is currently undergoing a little maintenance, so please bear with me!</p>
                         <p class="subtitle">Follow Me</p>
                         <ul class="social-media">
                             <li><a href="https://github.com/StephanieGallo" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -106,13 +118,45 @@
                     </div>
                 </div><!--/row-->
             </section>
-            <section>
+            <section class="grey">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="h1 center">Projects</h2>
-                        <p class="center">Coming soon!</p>
+                        <p class="center">More information coming soon!</p>
                     </div>
                 </div><!--/row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="http://laocrc.codestorm.io/" target="_blank"><img src="assets/img/projects/laocrc.png" class="img-center img-responsive"  height="200"/></a>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="https://www.regionalcte.org/" target="_blank"><img src="assets/img/projects/regionalcte.png" class="img-center img-responsive" height="200"/></a>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="https://desertcolleges.org/" target="_blank"><img src="assets/img/projects/desertcolleges.png" class="img-center img-responsive" height="200"/></a>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+
+                <!--<div class="row">
+                    <div class="col-md-3">
+
+                        Init Code()
+                    </div><!--/.col-md-3--
+                    <div class="col-md-3">
+
+                        ???
+                    </div><!--/.col-md-3--
+                    <div class="col-md-3">
+
+                        ???
+                    </div><!--/.col-md-3--
+                </div><!--/.row-->
             </section>
 
             <section id="exp">
@@ -120,64 +164,85 @@
                     <div class="col-md-12">
                         <h2 class="h1 center">Experience</h2>
                     </div>
+                </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Business Technical Assistant, Riverside Community College District<br>
+                            <h5>Web Developer</h5>
+                            <p class="subtitle">Freelance<br>
                             Current</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Design, develop, and maintain the Desert Consortium website using front-end technologies and dynamic back end languages.</p>
+                            <p> - Worked with clients to design and develop websites and web applications to meet their needs.</p>
+                            <p> - Created and edited web graphics.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
 
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Supplemental Instruction Leader, Moreno Valley College<br>
+                            <h5>Business Technical Assistant</h5>
+                            <p class="subtitle">Riverside Community College District<br>
+                            Current</p>
+                        </div><!--/col-md-4-->
+                        <div class="col-md-8">
+                            <p> - Design and develop a user-friendly website by programming site navigation and organizing site content into a logical structure.</p>
+                            <p> - Maintained website by updating content, implementing new technology, and monitoring performance.</p>
+                            <p> - Provide technical support for users.</p>
+                            <p> - Lead a team of developers to develop a state-wide used web application for the California Community College Regional Consortia.</p>
+                        </div><!--/col-md-8-->
+                    </div><!--/row-->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Supplemental Instruction Leader</h5>
+                            <p class="subtitle">Moreno Valley College<br>
                              2014 – 2016</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Facilitated student learning, interactive study sessions, provided in class assistance, and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer courses.</p>
+                            <p> - Facilitated student learning, interactive study sessions, provided in class assistance, and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer courses.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Computer Lab Aide, Moreno Valley College<br>
+                            <h5>Computer Lab Aide</h5>
+                            <p class="subtitle">Moreno Valley College<br>
                              2013 – 2016</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Facilitated student learning, interactive study sessions, provided in class assistance, and helped reinforce core concepts taught in the HTML, CSS, and introduction to computer courses.</p>
+                            <p> - Provided general technical assistance and personal tutoring for Computer Science, Information Technology, Graphic Design, and Business students.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Web Development Student Aide,  Moreno Valley College<br>
+                            <h5>Web Development Student Aide</h5>
+                            <p class="subtitle">Moreno Valley College<br>
                             2014 – 2016</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Assisted in the maintenance of the Moreno Valley College website using HTML 5, CSS, and JavaScript.</p>
+                            <p> - Assisted in the maintenance of the Moreno Valley College website using HTML 5, CSS, and JavaScript.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
 
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Technical Support Services Student Aide, Moreno Valley College<br>
+                            <h5>Technical Support Services Student Aide</h5>
+                            <p class="subtitle">Moreno Valley College<br>
                             2015 – 2016</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Assisted in the setup and installation of desktop and laptop computers.</p>
+                            <p> - Assisted in the setup and installation of desktop and laptop computers.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
 
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="subtitle">Web Developer And Content Strategist, Init Code Inc.<br>
+                            <h5>Web Developer And Content Strategist</h5>
+                            <p class="subtitle">Init Code Inc.<br>
                             2015</p>
                         </div><!--/col-md-4-->
                         <div class="col-md-8">
-                            <p>Responsible for the overall online presence of Init Code Inc. including the design, development, and maintenance of the company website.</p>
+                            <p> - Responsible for the overall online presence of Init Code Inc. including the design, development, and maintenance of the company website.</p>
                         </div><!--/col-md-8-->
                     </div><!--/row-->
-                </div><!--/row-->
             </section>
 
             <section>
@@ -188,26 +253,31 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <p>Bachelor of Science, Computer Science<br>
-                                <span class="subtitle">Expected Fall 2018</span></p>
+                                California State University, San Bernardino<br>
+                                <span class="subtitle">Expected Winter 2019</span></p>
                             </div><!--/.col-md-4-->
                             <div class="col-md-4">
                                 <p>Associates of Science, Computer Science<br>
+                                Moreno Valley College<br>
                                 <span class="subtitle">June 2016</span><br>
                                 <!--Moreno Valley College<br>
                                 Graduated with Distinction--></p>
                             </div><!--/.col-md-4-->
                             <div class="col-md-4">
                                 <p>Associates of Math & Science<br>
+                                Moreno Valley College<br>
                                 <span class="subtitle">June 2016</span><br>
                                 <!--Moreno Valley College--></p>
                             </div><!--/.col-md-4-->
                             <div class="col-md-4">
                                 <p>Associates of Science, Computer Programming<br>
+                                Moreno Valley College<br>
                                 <span class="subtitle">June 2016</span><br>
                                 <!--Moreno Valley College--></p>
                             </div><!--/.col-md-4-->
                             <div class="col-md-4">
                                 <p>Webmaster Certification<br>
+                                Moreno Valley College<br>
                                 <span class="subtitle">June 2016</span><br>
                                 <!--Moreno Valley College<br>
                                 Webmaster Certification with a concentration in Web Development--></p>
@@ -216,15 +286,57 @@
                     </div>
                 </div><!--/row-->
             </section>
+
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="h1 center">Skills &amp; Tools</h2>
+                    </div><!--/.col-md-12-->
+                </div><!--/row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <li>English</li>
+                            <li>Spanish</li>
+                            <li>Microsoft Office</li>
+                            <li>Dreamweaver</li>
+                            <li>Photoshop</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>Bootstrap</li>
+                            <li>Laravel</li>
+                            <li>Statamic</li>
+                            <li>C++</li>
+                            <li>Data Structures</li>
+                        </ul>
+                    </div>
+                </div><!--/.row-->
+            </section>
+
             <section>
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="h1 center">Let's work together!</h2>
-                        <p class="center subtitle"><a href="mailto:stephaniegallo.github@gmail.com">stephaniegallo.github@gmail.com</a></p>
+                        <p class="center subtitle"><a href="mailto:stephaniegallo.github@gmail.com" class="btn btn-black">stephaniegallo.github@gmail.com</a></p>
                     </div>
                 </div><!--/row-->
             </section>
         </div><!--/.container-->
+
 
 
         <!-- Optional JavaScript -->
