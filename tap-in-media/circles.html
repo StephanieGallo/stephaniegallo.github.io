@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+.circle-container {
+  padding: 25px 25px 25px 200px;
+}
+.small-circle {
+  padding: 18px;
+  width: 145px;
+  height: 145px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -150px;
+  border: solid 5px #979797;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.large-circle {
+  padding: 18px;
+  width: 282px;
+  height: 282px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+  margin-right: 100px;
+  margin-left: -115px;
+  text-align: center;
+  border: solid 9px #008b47;
+  background-color: #283029;
+  z-index: 1;
+  position: relative;
+}
+.large-circle > a {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: .004em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.small-circle-inner {
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  z-index: 5;
+}
+.large-circle-text {
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+  position: relative;
+  top: 103px;
+}
+.small-circle-inner .mg {
+    background-image: url("assets/img/Medical-Guardian-Logo-4Color.png") !important;
+    background-position: center;
+    background-size: contain;
+}
+</style>
+
+    <div class="circle-container">
+        <div class="small-circle mg">
+            <div class="small-circle-inner">
+                <img src="assets/img/Medical-Guardian-Logo-4Color.png" width="120px">
+            </div>
+        </div>
+        <div class="large-circle">
+            <p class="large-circle-text" href="#">Studies in Educational Leadership & Policy</p>
+        </div>
+    </div>
