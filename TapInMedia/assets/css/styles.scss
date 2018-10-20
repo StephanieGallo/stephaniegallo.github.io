@@ -347,7 +347,7 @@ nav a, nav a.nav-link {
 .circle-container {
     margin-left: auto !important;
     margin-right: auto !important;
-    height: 327px !important;
+
     &.bottom-circle-container {
         height: 300px !important;
 
@@ -371,6 +371,9 @@ nav a, nav a.nav-link {
             border-bottom: solid 2px #ffffff;
             height: 250px !important;
         }
+    }
+    @media (min-width: 1024px) {
+        height: 327px !important;
     }
 }
 
