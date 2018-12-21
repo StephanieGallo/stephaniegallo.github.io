@@ -7,7 +7,7 @@
 
         <link href="assets/fonts/css/fontawesome-all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <title>Stephanie Gallo</title>
         <style>
@@ -39,6 +39,12 @@
             color: #000;
             text-decoration: underline;
             background-color: yellow;
+        }
+
+        h6 a:hover {
+            text-decoration: none;
+            -webkit-transition:  .5s; /* Safari */
+            transition:  .5s;
         }
         .center {
             text-align: center !important;
@@ -120,9 +126,9 @@
 
                         <p class="subtitle">Follow Me</p>
                         <ul class="social-media">
-                            <li><a href="https://github.com/StephanieGallo" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.instagram.com/rm_stephanie.cpp/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/rm_stephaniecpp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/StephanieGallo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/rm_stephanie.cpp/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/rm_stephaniecpp" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div><!--/row-->
@@ -131,31 +137,37 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="h1 center">Projects</h2>
-                        <p class="center">More information coming soon!</p>
                     </div>
                 </div><!--/row-->
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="project">
-                            <a href="http://dev.codestorm.io/" target="_blank"><img src="assets/img/projects/laocrc.png" class="img-center img-fluid"  height="200"/></a>
+                            <a href="https://www.tapinmedia.com/" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/tapinmedia.png" class="img-center img-fluid"  height="200"/></a>
                             <br><br>
-                            <h6 class="center">LA/OC Regional Consortia</h6>
+                            <h6 class="center"><a href="https://www.tapinmedia.com/" target="_blank" rel="noopener noreferrer">TapInMedia</a></h6>
                         </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4">
+                    </div><!--/.col-md-3-->
+                    <div class="col-md-3">
                         <div class="project">
-                            <a href="https://www.regionalcte.org/" target="_blank"><img src="assets/img/projects/regionalcte.png" class="img-center img-fluid" height="200"/></a>
+                            <a href="http://dev.codestorm.io/" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/laocrc.png" class="img-center img-fluid"  height="200"/></a>
                             <br><br>
-                            <h6 class="center">RegionalCTE</h6>
+                            <h6 class="center"><a href="http://dev.codestorm.io/" target="_blank" rel="noopener noreferrer">LA/OC Regional Consortia</a></h6>
                         </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4">
+                    </div><!--/.col-md-3-->
+                    <div class="col-md-3">
                         <div class="project">
-                            <a href="https://desertcolleges.org/" target="_blank"><img src="assets/img/projects/desertcolleges.png" class="img-center img-fluid" height="200"/></a>
+                            <a href="https://www.regionalcte.org/" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/regionalcte.png" class="img-center img-fluid" height="200"/></a>
                             <br><br>
-                            <h6 class="center">Inland Empire/Desert Regional Consortia</h6>
+                            <h6 class="center"><a href="https://www.regionalcte.org/" target="_blank" rel="noopener noreferrer">RegionalCTE</a></h6>
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div><!--/.col-md-3-->
+                    <div class="col-md-3">
+                        <div class="project">
+                            <a href="https://desertcolleges.org/" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/desertcolleges.png" class="img-center img-fluid" height="200"/></a>
+                            <br><br>
+                            <h6 class="center"><a href="https://desertcolleges.org/" target="_blank" rel="noopener noreferrer">Inland Empire/Desert Regional Consortia</a></h6>
+                        </div>
+                    </div><!--/.col-md-3-->
                 </div><!--/.row-->
 
                 <!--<div class="row">
@@ -333,8 +345,10 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <p><span class="playfair">Bachelor of Science, Computer Science</span><br>
+                                <em>Cum Laude, Computer Science and Engineering Department Honors</em><br>
                                 California State University, San Bernardino<br>
-                                <span class="subtitle">Expected Fall 2018</span></p>
+
+                                <span class="subtitle">Fall 2018</span></p>
                             </div><!--/.col-md-4-->
                             <div class="col-md-4">
                                 <p><span class="playfair">Associates of Science, Computer Science</span><br>
