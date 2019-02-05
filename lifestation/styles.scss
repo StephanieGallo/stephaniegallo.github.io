@@ -12,6 +12,10 @@ $border-style: 3px solid $primary-color;
 .hidden { //delete me
     display: none;
 }
+
+html {
+    background-color: #000;
+}
 nav {
     .container {
         @media screen and (min-width: 1025px) {
@@ -154,7 +158,7 @@ main {
             border-right: $border-style;
             border-left: $border-style;
 
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 768px) {
                 margin-top: 15px;
                 border-left: $border-style;
             }
@@ -162,8 +166,11 @@ main {
 
         &#card-left, &#card-right {
 
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                height: 300px !important;
+            }
             @media screen and (min-width: 991px) and (max-width: 1199px) {
-                height: 400px !important;
+                height: 300px !important;
             }
             @media screen and (min-width: 1199px) {
                 height: 315px !important;
@@ -265,7 +272,7 @@ footer {
         min-width: 530px;
     }
     @media screen and (min-width: 768px) and (max-width: 991px) {
-        width: 300px;
+        width: 550px;
     }
     @media screen and (min-width: 992px) and (max-width: 1024px) {
         width: 400px;
