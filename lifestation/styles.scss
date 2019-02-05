@@ -19,7 +19,7 @@ html {
     background-size: 100%;
     background-size: cover;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) and (max-width: 1025px) {
         height: 100%;
     }
     background-color: #000;
