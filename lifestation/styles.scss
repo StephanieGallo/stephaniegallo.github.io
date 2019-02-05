@@ -14,11 +14,15 @@ $border-style: 3px solid $primary-color;
 }
 
 html {
-    background-color: #000;
+
     background: url("assets/living-room-gb1.jpg") center center no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-size: cover;
-    height: 150%;
+
+    @media screen and (min-width: 1024px) {
+        height: 100%;
+    }
+    background-color: #000;
 
 }
 nav {
