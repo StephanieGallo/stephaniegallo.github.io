@@ -21,6 +21,10 @@ $grey: #f2f2f2;
     }
 }
 
+@mixin shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 /****/
 .debug {
     border: 1px solid red;
@@ -48,7 +52,7 @@ body {
 }
 .header {
     background-color: $primary-green;
-    background-image: url('banner.jpg');
+    /*background-image: url('banner.jpg');*/
     background-position: top;
     background-size: cover;
 
@@ -97,12 +101,16 @@ main .cta-button {
     cursor: pointer;
     background-color: $primary-green;
     border-color: $primary-green;
+
+    &:hover {
+        @include shadow;
+    }
 }
 .cta-button:hover {
     background: rgba(0,105,255,.1);
 }
 #medAlertDevices {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 55%, $primary-green 60%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 55%, $orange 60%);
     background-color: transparent;
     font-size: 2.85rem;
 }
@@ -133,7 +141,8 @@ main .cta-button {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 0;
-    box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .card-header {
     background-color: #fff;
@@ -192,6 +201,10 @@ a.btn, button.btn {
         background-color: $orange;
         border: 2px solid $orange;
         font-size: 1.5rem;
+
+        &:hover {
+            @include shadow;
+        }
     }
 }
 footer {
@@ -201,15 +214,29 @@ footer {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
+    p {
+        a {
+            color: #fff;
+
+            &:hover {
+                color: rgba(255, 255, 255, .5);
+                 text-decoration: none;
+            }
+        }
+    }
+    .social-media {
+        font-size: 50%;
+        i.fas {
+            color: $orange;
+        }
+    }
+
 }
 .img-small {
     max-height: 150px;
 }
 i.fas {
     color: $primary-green;
-}
-.social-media {
-    font-size: 50%;
 }
 .text-small {
     font-size: 90%;
