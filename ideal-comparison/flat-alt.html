@@ -7,13 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/fdc8baeda1.js"></script>
-
 
     <title>Hello, world!</title>
     <style>
         /*@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700&display=swap');*/
-        @import url('https://fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro|Poppins:700&display=swap');
 
         html {
             text-rendering: optimizeLegibility;
@@ -22,17 +20,12 @@
         body {
             /*background-color: #f2f2f2;*/
             color: #212121;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
         }
         .bg-grey {
             background-color: #f2f2f2;
         }
         .bg-green {
             background-color: #4CAF50;
-        }
-        .text-green {
-            color: #4CAF50;
         }
         .header {
             background-color: #F6F7FB;
@@ -49,14 +42,22 @@
             width: 220px;
         }
         main h1 {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Playfair Display', sans-serif;
             font-weight: 700;
         }
         .header h1 {
             color:
         }
-        h1, h2, h3, h4, h5, h6 {
+        h1 {
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: 700;
+        }
+        h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
             font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        .playfair {
+            font-family: 'Playfair Display', sans-serif;
             font-weight: 700;
         }
         .poppins {
@@ -131,7 +132,7 @@
             border: 0;
         }
         .card-title {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Playfair Display', sans-serif;
             font-weight: 700;
         }
         .hidden {
@@ -159,7 +160,6 @@
         a.btn.btn-primary, button.btn.btn-primary {
             background-color: #FF5722;
             border-color: #FF5722;
-            border: 2px solid;
             color: #fff;
             padding-left: 20px;
             padding-right: 20px;
@@ -167,7 +167,6 @@
         }
         a.btn, button.btn {
             border-radius:25px;
-            font-size: 1.4rem;
         }
         .phone-btn {
             font-size: 1.1rem;
@@ -184,33 +183,6 @@
             border-color: #FF5722 !important;
             color: #fff !important;
         }
-        #bottom-cta {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            /*background-image: url('grandma-2.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;;
-            background-position: center;*/
-
-            color: #fff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            font-family: 'Source Sans Pro', Arial, sans-serif;
-            padding-bottom: 1.5rem;
-            padding-top: 5rem;
-            text-align: center;
-        }
-        .img-small {
-            max-height: 150px;
-        }
-        i.fas {
-            color: #4CAF50;
-        }
-        .social-media {
-            font-size: 50%;
-        }
     </style>
 </head>
 <body>
@@ -219,7 +191,6 @@
                     <img src="ideal.png" alt="">
                 </a>
                 <div class="ml-auto">
-                    Talk to a Speicalist Today<br>
                     <button class="btn btn-primary phone-btn">1-866-821-3158</button>
                  </div>
         </nav>
@@ -237,12 +208,7 @@
                             <div class="card text-center w-75">
                             <div class="card-body">
                                 <div class="card-title mt-4"><span class="h6">Compare Medical Alert Systems Today!</span><br>
-
-                                    <p><i class="fas fa-map-marker-alt fa-5x"></i></p>
-
                                 <h3 class="mt-1">What is your Zip Code?</h3></div>
-
-
                                 <input class="form-control form-control-lg my-5 w-50 mx-auto" type="text" placeholder="Zip Code" type="number">
 
                                 <a href="#" class="btn btn-primary btn-block cta-button">Get Started</a>
@@ -285,88 +251,20 @@
                 </div><!--/.container-->
             </section>
         </main>
-        <section class="bg-grey">
+        <section class="hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="h3">iDeal Comparison investigates and reviews products &amp; services to inform our iDeal Rating score and rankings based on three core criteria:</h2>
-                    </div><!--/.col-12-->
-                </div><!--/.row-->
-                <div class="row mt-5">
-                    <div class="col-md-4 text-center">
-                        <img src="undraw_features_overview_jg7a.svg" class="img-fluid img-small">
-                        <h3 class="h3 mt-4">Features</h3>
-                    </div><!--/.col-md-4 text-center-->
-                    <div class="col-md-4 text-center">
-                        <img src="undraw_Savings_dwkw.svg" class="img-fluid img-small">
-                        <h3 class="h3 mt-4">Price</h3>
-                    </div><!--/.col-md-4 text-center-->
-                    <div class="col-md-4 text-center">
-                        <img src="undraw_like_dislike_1df-alt.svg" class="img-fluid img-small">
-                        <h3 class="h3 mt-4">Reputation</h3>
-                    </div><!--/.col-md-4 text-center-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-6 mt-4">
-                        <h2 class="h5 text-uppercase text-green">Our Mission</h2>
-                        <p class="h4">Our mission is to help customers get the best product or service, at the best price available, from a trusted company. Consumers depend on us to get it right, so our evaluators adhere to strict review guidelines.</p>
-                    </div><!--/.col-6-->
-                    <div class="col-6 text-center">
-                        <img src="undraw_team_spirit_hrr4.svg" class="img-fluid" style="max-height: 250px">
-                    </div><!--/.col-6-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </section>
-        <section class="bg-green" id="bottom-cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-3">Find the iDeal Choice Medical Alert System for You</h2>
+                        <h2 class="mb-3">Find the iDeal Choice Medical Alert System for You!</h2>
+                        <p>iDeal Comparison investigates and reviews products/services to inform our iDeal Rating score and rankings based on three core criteria: Features, Price, and Reputation. Our mission is to help customers get the best product/service, at the best price available, from a trusted company. Consumers depend on us to get it right, so our evaluators adhere to strict review guidelines.</p>
 
                         <p>Live safely and independently. iDeal Comparison will help you find the best medical alert system for your budget today!</p>
-
-                        <button class="btn btn-primary">Get Started</button>
                     </div>
                 </div>
             </div>
         </section>
     </div><!--/.container-fluid-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="social-media">
-                        <a href="">
-                            <span class="fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <a href="">
-                            <span class="fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <a href="">
-                            <span class="fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </div>
 
-                    <p>iDeal Comparison&trade;</p>
-                </div><!--/.col-md-12-->
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
