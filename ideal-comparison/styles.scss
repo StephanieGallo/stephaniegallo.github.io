@@ -4,8 +4,22 @@
 
 /* Variables */
 $primary-green: #4CAF50;
-$orange: #468ee5;
+$orange: #FF5722;
 $grey: #f2f2f2;
+
+@mixin button-outline {
+    background-color: #fff !important;
+    border: 2px solid $orange !important;
+    color: #FF5722 !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #FF5722 !important;
+        border-color: #FF5722 !important;
+        color: #fff !important;
+    }
+}
 
 /****/
 .debug {
@@ -68,14 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .fa-heart {
     color: #c81e29;
 }
-.btn-phone {
-    color: $orange;
-    border-color: $orange;
-    padding: 3px;
-}
-.btn-phone .top-text{
-    line-height: 10px;
-}
+
 .phone-text{
     line-height: .9rem;
     font-size: 1.3rem;
@@ -157,13 +164,12 @@ nav {
     border-bottom: 1px solid #ddd;
 }
 a.btn.btn-primary, button.btn.btn-primary {
-    background-color: #FF5722;
-    border: 2px solid #FF5722;
-    color: #fff;
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
     transition: 0.5s ease;
+    background-color: $orange;
+    border: 2px solid $orange;
 }
 a.btn, button.btn {
     border-radius:25px;
@@ -174,20 +180,19 @@ a.btn, button.btn {
     border-color: $primary-green;
 }
 .phone-btn {
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: #fff !important;
-    color: #FF5722 !important;
+    @include button-outline;
 }
-.phone-btn:hover {
-    background-color: #FF5722 !important;
-    border-color: #FF5722 !important;
-    color: #fff !important;
-}
+
 #bottom-cta {
     padding-top: 100px;
     padding-bottom: 100px;
     color: #fff;
+
+    button {
+        background-color: $orange;
+        border: 2px solid $orange;
+        font-size: 1.5rem;
+    }
 }
 footer {
     background-color: #333;
