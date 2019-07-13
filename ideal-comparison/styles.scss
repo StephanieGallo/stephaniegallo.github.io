@@ -6,6 +6,7 @@
 $primary-green: #4CAF50;
 $orange: #FF5722;
 $grey: #f2f2f2;
+$dark-grey: #212121;
 
 @mixin button-outline {
     background-color: #fff !important;
@@ -37,7 +38,7 @@ html {
 }
 body {
     /*background-color: $grey;*/
-    color: #212121;
+    color: $dark-grey;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -52,6 +53,7 @@ body {
 }
 .header {
     background-color: $primary-green;
+
     /*background-image: url('banner.jpg');*/
     background-position: top;
     background-size: cover;
@@ -187,6 +189,8 @@ section:first-of-type {
 section {
     padding-bottom: 3.25rem;
     padding-top: 3rem;
+
+
 }
 nav {
     border-bottom: 1px solid #ddd;
@@ -266,4 +270,30 @@ i.fas {
         width: 100% !important;
     }
 
+}
+
+.form-wizard {
+    height: 100%;
+}
+.gradient-bg {
+    background: rgb(27,94,32);
+    background: linear-gradient(90deg, rgba(27,94,32,1) 0%, rgba(76,175,80,1) 100%);
+}
+
+.step {
+    font-size: 1.5rem;
+    color: grey;
+    font-family: 'Poppins';
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: $dark-grey;
+}
+#card-left {
+    padding: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
