@@ -1,0 +1,45 @@
+//sass --watch styles.scss:styles.min.css  --style compressed
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+@font-face {
+  font-family: 'Manifold DSA';
+  src: url('../fonts/ManifoldDSA-DemiBold.otf');
+}
+
+$red: #EC1F27;
+//$red: #ED2C24;
+$black: #231F20;
+$dark-grey: #292D2F;
+$white: #FFFFFF;
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+}
+
+nav {
+    background-color: $red;
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
+}
+
+footer {
+    background-color: $red;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+.bg-dark-grey {
+    background-color: $dark-grey;
+    color: $white;
+}
