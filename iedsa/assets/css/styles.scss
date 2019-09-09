@@ -18,17 +18,27 @@ html {
 }
 
 nav {
-    .navbar-brand {
-        color: $white;
-        font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
-
-        img {
-            height: 50px;
-        }
-    }
     &.navbar {
         background-color: $red;
 
+        a.navbar-brand {
+            color: $white !important;
+            font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
+            .small-text {
+                font-size: 1rem;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+            }
+            img {
+                height: 50px;
+            }
+        }
+        a.nav-link {
+            color: $white !important;
+            &.disabled {
+
+            }
+        }
     }
 }
 
@@ -36,8 +46,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
 }
 
+h2 {
+    margin-bottom: 40px;
+}
 section {
-    padding-bottom: 35px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 footer {
     background-color: $red;
@@ -83,11 +97,28 @@ footer {
 }
 /* End Button Styles */
 
+/* Card Styles */
+.event-card {
+    border-top: 10px solid $red;
+    border-radius: 0;
+
+}
+/* End Card Styles */
 .jumbotron {
+    margin-bottom: 0;
     .card {
         border: 0;
         border-radius: 0;
         border-top: 10px solid $red;
 
+    }
+}
+
+#working-groups {
+    .card {
+
+        border-radius: 0;
+        color: #333;
+        text-align: center;
     }
 }
