@@ -11,8 +11,13 @@ $red: #EC1F27;
 $black: #231F20;
 $dark-grey: #292D2F;
 $white: #FFFFFF;
+$font-manifold: 'Manifold DSA', 'Source Sans Pro', sans-serif;
+.hidden {
+    display: none;
+}
 
 html {
+    background-color: $red;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.1rem;
 }
@@ -23,18 +28,23 @@ nav {
 
         a.navbar-brand {
             color: $white !important;
-            font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
-            .small-text {
+            line-height: 1.25rem;
+            font-family: $font-manifold;
+            .small {
                 font-size: 1rem;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 300;
             }
             img {
+                margin-right: 25px;
                 height: 50px;
             }
         }
         a.nav-link {
             color: $white !important;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 300;
             &.disabled {
 
             }
@@ -43,7 +53,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
+    font-family: $font-manifold;
 }
 
 h2 {
@@ -71,6 +81,9 @@ footer {
         color: $white;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
+        &:hover {
+            color: $white;
+        }
     }
 }
 
@@ -98,7 +111,7 @@ footer {
     border: 0;
 }
 .btn {
-    font-family: 'Manifold DSA', 'Source Sans Pro', sans-serif;
+    font-family: $font-manifold;
 }
 /* End Button Styles */
 
@@ -107,9 +120,25 @@ footer {
     border-top: 10px solid $red;
     border-radius: 0;
 
+    a.event-link {
+        color: $red;
+        font-family: $font-manifold;
+        font-size: 1.15rem;
+    }
 }
 /* End Card Styles */
+.header {
+    background-image: url('https://ebdsa-website.s3-us-west-1.amazonaws.com/upload/2018-08-31/1535695366900-dsa-header-cropped.jpg');
+    background-position: center;
+    background-size: cover;
+}
 .jumbotron {
+    background-color: rgba(0,0,0, .5);
+    backdrop-filter: blur(3px);
+
+
+
+
     margin-bottom: 0;
     .card {
         border: 0;
@@ -119,10 +148,21 @@ footer {
     }
 }
 
+
 #working-groups {
     .card {
+        background-position: center;
+        background-size: cover;
+        border: 0;
         border-radius: 0;
-        color: #333;
+        color: #fff;
+        font-family: $font-manifold;
+        font-size: 1.25rem;
+        min-height: 225px;
         text-align: center;
+        .card-body {
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, 0.6);
+        }
     }
 }
