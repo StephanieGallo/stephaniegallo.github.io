@@ -16,6 +16,9 @@ $font-manifold: 'Manifold DSA', 'Source Sans Pro', sans-serif;
     display: none;
 }
 
+.debug {
+    border: 1px solid blue;
+}
 html {
     background-color: $red;
     font-family: 'Source Sans Pro', sans-serif;
@@ -47,6 +50,9 @@ nav {
             font-weight: 300;
             &.disabled {
 
+            }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -84,6 +90,18 @@ footer {
         &:hover {
             color: $white;
         }
+        &.icon-link:hover  {
+            text-decoration: none;
+        }
+    }
+    a:hover > i.fab {
+        text-decoration: none !important;
+    }
+    #brand-logo {
+        text-align: center;
+        img {
+            max-width: 65px;
+        }
     }
 }
 
@@ -109,6 +127,9 @@ footer {
 .btn-primary {
     background-color: $red;
     border: 0;
+    &:hover {
+        background-color: #df131b;
+    }
 }
 .btn {
     font-family: $font-manifold;
@@ -132,13 +153,14 @@ footer {
     background-position: center;
     background-size: cover;
 }
+.sm-header, .jumbotron  {
+    height: 275px;
+}
 .jumbotron {
     background-color: rgba(0,0,0, .5);
     backdrop-filter: blur(3px);
-
-
-
-
+    border: 0;
+    border-radius: 0;
     margin-bottom: 0;
     .card {
         border: 0;
@@ -150,19 +172,38 @@ footer {
 
 
 #working-groups {
-    .card {
-        background-position: center;
-        background-size: cover;
-        border: 0;
-        border-radius: 0;
+    .col-6.col-md-3 {
+        margin-bottom: 25px;
+    }
+}
+.card-link {
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-family: $font-manifold;
+    font-size: 1.25rem;
+    min-height: 225px;
+    text-align: center;
+    .card-body {
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    a {
         color: #fff;
-        font-family: $font-manifold;
-        font-size: 1.25rem;
-        min-height: 225px;
-        text-align: center;
-        .card-body {
-            backdrop-filter: blur(2px);
-            background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media (max-width: 992px) {
+    #upcoming-events {
+        .col-lg-4 {
+            margin-bottom: 25px;
+        }
+    }
+    footer {
+        #brand-logo {
+            margin-bottom: 25px;
         }
     }
 }
