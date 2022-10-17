@@ -58,9 +58,13 @@
         .card a.btn.btn-link:hover {
             background-color: #e9eeff;
         }
+
         #hobbies .card img {
             border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 5px;
+            height: 100%;
+            width: 100%;
         }
         @media (min-width: 1200px) {
             .h3, h3 {
@@ -68,9 +72,9 @@
             }
         }
         @media(max-width: 767px) {
-            .card img.img-fluid {
-                width: 100%;
-                /*rounded-start*/
+            #hobbies .card img {
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0px;
             }
         }
     </style>
@@ -253,11 +257,11 @@
             <div class="col-md-12">
                 <h2 class="my-4">Hobbies</h2>
             </div><!--/.col-md-12-->
-            <div class="col-md-6">
-                <div class="card h-100" style="max-width: 540px;">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
                     <div class="row g-0">
                         <div class="col-lg-4">
-                            <img src="assets/img/baking.png" class="img-fluid" alt="Chocolate Chip Cookies Wrapped with a tag that reads '2020' Homemade with love from Stephanie">
+                            <img src="assets/img/baking-full.png" class="img-fluid" alt="Chocolate Chip Cookies Wrapped with a tag that reads '2020' Homemade with love from Stephanie">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
@@ -268,12 +272,12 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/.col-md-6-->
-            <div class="col-md-6">
-                <div class="card h-100" style="max-width: 540px">
+            </div><!--/.col-md-6 mb-4-->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
                     <div class="row g-0">
                         <div class="col-lg-4">
-                            <img src="assets/img/hiking.png" class="img-fluid" alt="Photo of stream with fallen logs, surounded by tall trees">
+                            <img src="assets/img/hiking-full.png" class="img-fluid" alt="Photo of stream with fallen logs, surounded by tall trees">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
@@ -284,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/.col-md-6-->
+            </div><!--/.col-md-6 mb-4-->
         </div><!--/.row-->
 
     </div><!--/.container-->
